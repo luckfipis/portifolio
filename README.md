@@ -2,7 +2,7 @@
 
 > Desenvolvedor Front-end · Osasco, SP
 
-🔗 **Site publicado:** [luckfipis.github.io/portfolio](https://luckfipis.github.io/portfolio/)
+🔗 **Site publicado:** [https://luckfipis.github.io/portifolio/](https://luckfipis.github.io/portifolio/)
 
 ---
 
