@@ -1,0 +1,109 @@
+/* ── Design Tokens ─────────────────────────────────────
+   Grafite + Violeta elétrico + Fraunces (serif expressiva)
+   Tema claro/escuro com a mesma identidade em ambos.
+──────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Tema claro (default) ── */
+  --bg:         #F4F1EC;
+  --bg-card:    #FFFFFF;
+  --bg-hover:   #ECE8E0;
+  --ink:        #15131A;
+  --text:       #353240;
+  --muted:      #847F8C;
+  --border:     #E2DDD3;
+  --violet:     #6B4FE0;
+  --violet-dim: #5739C4;
+  --violet-glow: rgba(107, 79, 224, 0.09);
+  --shadow:     rgba(21, 19, 26, 0.07);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  --max-w: 880px;
+  --radius: 10px;
+
+  --transition-theme: background 320ms ease, color 320ms ease, border-color 320ms ease;
+}
+
+[data-theme="dark"] {
+  --bg:         #121017;
+  --bg-card:    #1B1822;
+  --bg-hover:   #242030;
+  --ink:        #F0EDFB;
+  --text:       #CFC9DE;
+  --muted:      #756F88;
+  --border:     #2C2738;
+  --violet:     #9C84F5;
+  --violet-dim: #8569ED;
+  --violet-glow: rgba(156, 132, 245, 0.12);
+  --shadow:     rgba(0, 0, 0, 0.4);
+}
+
+/* ── Reset ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: var(--transition-theme);
+  cursor: none; /* cursor customizado assume o controle (desktop) */
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a {
+  color: var(--violet);
+  text-decoration: none;
+  transition: color 150ms;
+}
+a:hover { color: var(--violet-dim); }
+
+/* ── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+::selection {
+  background: var(--violet);
+  color: #fff;
+}
+
+/* ── Scroll reveal genérico ───────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cursor customizado é desabilitado em touch/mobile */
+@media (hover: none), (pointer: coarse) {
+  body { cursor: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  body { cursor: auto; }
+}

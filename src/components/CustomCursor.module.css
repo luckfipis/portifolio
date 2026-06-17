@@ -1,0 +1,46 @@
+.dot,
+.ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 200ms, width 200ms, height 200ms, background 200ms, border-color 200ms;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: var(--violet);
+  transform: translate(-100px, -100px);
+  margin-left: -3px;
+  margin-top: -3px;
+}
+
+.ring {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--violet);
+  margin-left: -16px;
+  margin-top: -16px;
+}
+
+.dot.visible,
+.ring.visible {
+  opacity: 1;
+}
+
+.ringHover {
+  width: 52px;
+  height: 52px;
+  margin-left: -26px;
+  margin-top: -26px;
+  background: var(--violet-glow);
+  border-color: transparent;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .dot, .ring { display: none; }
+}

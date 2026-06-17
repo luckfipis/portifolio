@@ -1,0 +1,88 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  will-change: transform;
+  transition: border-color 200ms, box-shadow 200ms, opacity 600ms ease, transform 150ms ease-out;
+}
+
+/* Durante o reveal de entrada (scroll), a transição de transform
+   precisa ser mais lenta para o efeito de fade+slide funcionar bem.
+   Assim que está visível, volta a ser rápida para o tilt do mouse. */
+.card:not(:global(.is-visible)) {
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.card:hover {
+  border-color: var(--violet);
+  box-shadow: 0 16px 32px var(--shadow);
+}
+
+.highlight {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--violet);
+  background: var(--violet-glow);
+  padding: 4px 11px;
+  border-radius: 20px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  padding-right: 70px;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+}
+
+.tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.links {
+  display: flex;
+  gap: 22px;
+  margin-top: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.link {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 150ms;
+}
+
+.link:hover {
+  color: var(--violet);
+}

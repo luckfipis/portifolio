@@ -1,0 +1,25 @@
+.toggle {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 200ms, color 200ms, transform 200ms;
+  flex-shrink: 0;
+}
+
+.toggle svg {
+  width: 17px;
+  height: 17px;
+}
+
+.toggle:hover {
+  border-color: var(--violet);
+  color: var(--violet);
+  transform: rotate(15deg);
+}
