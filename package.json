@@ -2,7 +2,7 @@
   "name": "portfolio-luckfipis",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://luckfipis.github.io/portfolio",
+  "homepage": "https://luckfipis.github.io/portifolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
