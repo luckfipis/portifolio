@@ -9,7 +9,7 @@ const PROJECTS = [
     id: 'cicd-pipeline',
     title: 'Pipeline CI/CD',
     description:
-      'Pipeline completa de Integração e Entrega Contínua com GitHub Actions. Automatiza lint, testes, build e deploy a cada push na main — sem intervenção manual.',
+      'Montei uma pipeline com GitHub Actions que roda lint, testes e build automaticamente, e faz o deploy sozinha a cada push na main. Nada manual.',
     tags: ['Next.js', 'GitHub Actions', 'Jest', 'ESLint'],
     repo: 'https://github.com/luckfipis/cicd-pipeline',
     demo: 'https://luckfipis.github.io/cicd-pipeline/',
@@ -19,7 +19,7 @@ const PROJECTS = [
     id: 'diario-de-bordo',
     title: 'Diário de Bordo',
     description:
-      'PWA para registro de atividades diárias com suporte offline, instalação na tela inicial e persistência via localStorage. Service Worker com estratégia Cache First.',
+      'Um app para registrar atividades do dia, com suporte offline e instalação na tela inicial. Os dados ficam salvos no navegador via localStorage, e o Service Worker cuida do cache.',
     tags: ['PWA', 'Service Worker', 'localStorage', 'Vanilla JS'],
     repo: 'https://github.com/luckfipis/diario-de-bordo',
     demo: 'https://luckfipis.github.io/diario-de-bordo/',
@@ -29,7 +29,7 @@ const PROJECTS = [
     id: 'performance-web',
     title: 'Performance Web',
     description:
-      'Portfólio otimizado com foco em Core Web Vitals. Performance subiu de 51 para 98 no Lighthouse após aplicar SVG inline, CSS crítico, defer no JS e remoção de código morto.',
+      'Peguei um portfólio com performance ruim e fui atrás dos gargalos. Depois de usar SVG inline, CSS crítico, defer no JS e cortar código morto, o score no Lighthouse saltou de 51 para 98.',
     tags: ['Performance', 'Lighthouse', 'Core Web Vitals', 'HTML/CSS'],
     repo: 'https://github.com/luckfipis/performance-web',
     demo: 'https://luckfipis.github.io/performance-web/',
@@ -39,7 +39,7 @@ const PROJECTS = [
     id: 'microfrontends',
     title: 'Micro Frontends',
     description:
-      'Cardápio digital dividido em três aplicações React independentes integradas via Webpack Module Federation. Comunicação desacoplada com CustomEvents.',
+      'Um cardápio digital separado em três apps React independentes, integrados com Webpack Module Federation. Eles trocam mensagens entre si usando CustomEvents, sem dependência direta.',
     tags: ['React', 'Webpack', 'Module Federation', 'Monorepo'],
     repo: 'https://github.com/luckfipis/microfrontends',
     demo: 'https://luckfipis.github.io/microfrontends/container/',

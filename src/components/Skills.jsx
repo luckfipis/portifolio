@@ -69,8 +69,7 @@ function Skills() {
             Tecnologias que <em>domino</em>
           </h2>
           <p className={styles.subtitle}>
-            Níveis aproximados, refletindo a prática real em projetos —
-            não certificações.
+            São níveis aproximados, baseados no que uso de verdade nos projetos.
           </p>
         </header>
 

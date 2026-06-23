@@ -51,9 +51,9 @@ function Hero() {
 
           <p className={styles.desc}>
             Em transição de carreira do varejo para o desenvolvimento web.
-            Formando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela FAM
-            e no programa <strong>Full Stack Dev</strong> da EBAC — com foco em React,
-            Next.js e boas práticas de engenharia front-end.
+            Estou me formando em <strong>Análise e Desenvolvimento de Sistemas</strong> pela FAM
+            e também faço o programa <strong>Full Stack Dev</strong> da EBAC.
+            Meu foco hoje é React, Next.js e boas práticas de front-end.
           </p>
 
           <div className={styles.actions}>

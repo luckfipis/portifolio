@@ -25,8 +25,8 @@ function Projects() {
             O que já <em>construí</em>
           </h2>
           <p className={styles.subtitle}>
-            Cada projeto focado em uma camada diferente do desenvolvimento web —
-            de pipelines automatizados a arquiteturas distribuídas.
+            Cada um explora uma parte diferente do desenvolvimento web,
+            de pipelines automatizados até arquiteturas distribuídas.
           </p>
         </header>
 
