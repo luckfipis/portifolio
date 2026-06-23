@@ -15,7 +15,7 @@ const LINKS = [
   {
     label: 'LinkedIn',
     value: 'Lucas Pereira',
-    href: 'https://linkedin.com/in/luckfipis',
+    href: 'https://www.linkedin.com/in/lucas-dos-santos-pereira-172a4b1b2/',
   },
   {
     label: 'E-mail',
