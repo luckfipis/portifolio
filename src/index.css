@@ -61,7 +61,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: var(--transition-theme);
-  cursor: none; /* cursor customizado assume o controle (desktop) */
+  /* O cursor nativo NÃO é escondido por padrão.
+     CustomCursor.jsx só aplica a classe que o esconde depois
+     de confirmar que o cursor customizado está ativo e desenhando —
+     veja CustomCursor.module.css (.hideNativeCursor). */
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -94,16 +97,10 @@ a:hover { color: var(--violet-dim); }
   transform: translateY(0);
 }
 
-/* Cursor customizado é desabilitado em touch/mobile */
-@media (hover: none), (pointer: coarse) {
-  body { cursor: auto; }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
   .reveal { opacity: 1; transform: none; }
-  body { cursor: auto; }
 }

@@ -163,24 +163,6 @@
   object-fit: cover;
 }
 
-/* Fallback exibido se a imagem não carregar */
-.portraitFallback {
-  display: none;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(160deg, var(--violet) 0%, var(--violet-dim) 100%);
-}
-
-.portraitFallback span {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 4rem;
-  color: #fff;
-  font-weight: 600;
-}
-
 /* Selo flutuante */
 .badge {
   position: absolute;

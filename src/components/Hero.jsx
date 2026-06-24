@@ -8,6 +8,7 @@
 
 import { useEffect, useRef } from 'react';
 import useTypewriter from '../hooks/useTypewriter';
+import fotoPerfil from '../assets/foto-perfil.jpg';
 import styles from './Hero.module.css';
 
 function Hero() {
@@ -86,16 +87,9 @@ function Hero() {
           <div ref={frameRef} className={styles.portraitFrame}>
             <img
               className={styles.portrait}
-              src={`${process.env.PUBLIC_URL}/foto-perfil.jpg`}
+              src={fotoPerfil}
               alt="Retrato de Lucas Pereira"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'flex';
-              }}
             />
-            <div className={styles.portraitFallback} aria-hidden="true">
-              <span>LP</span>
-            </div>
           </div>
 
           <div className={styles.badge}>

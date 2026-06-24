@@ -1,3 +1,10 @@
+/* Aplicada no <body> via JS, somente depois que confirmamos
+   que o cursor customizado está ativo e sendo desenhado.
+   Nunca é o estado padrão — ver CustomCursor.jsx. */
+.hideNativeCursor {
+  cursor: none;
+}
+
 .dot,
 .ring {
   position: fixed;
@@ -39,8 +46,4 @@
   margin-top: -26px;
   background: var(--violet-glow);
   border-color: transparent;
-}
-
-@media (hover: none), (pointer: coarse) {
-  .dot, .ring { display: none; }
 }
