@@ -10,12 +10,12 @@ const LINKS = [
   {
     label: 'GitHub',
     value: '@luckfipis',
-    href: 'https://www.linkedin.com/in/lucas-dos-santos-pereira-172a4b1b2/',
+    href: 'https://github.com/luckfipis',
   },
   {
     label: 'LinkedIn',
     value: 'Lucas Pereira',
-    href: 'https://linkedin.com/in/luckfipis',
+    href: 'https://www.linkedin.com/in/lucas-dos-santos-pereira-172a4b1b2/',
   },
   {
     label: 'E-mail',
