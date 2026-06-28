@@ -14,7 +14,7 @@ import useReveal from '../hooks/useReveal';
 import styles from './ProjectCard.module.css';
 
 function ProjectCard({ project, index = 0 }) {
-  const { title, description, tags, repo, demo, highlight } = project;
+  const { title, description, tags, repo, demo, highlight, featured } = project;
   const revealRef = useReveal();
   const cardRef = useRef(null);
 
@@ -49,14 +49,14 @@ function ProjectCard({ project, index = 0 }) {
   return (
     <article
       ref={setRefs}
-      className={`reveal ${styles.card}`}
+      className={`reveal ${styles.card} ${featured ? styles.featured : ''}`}
       style={{ transitionDelay: `${index * 80}ms` }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       {highlight && (
         <span className={styles.highlight} aria-label={`Destaque: ${highlight}`}>
-          {highlight}
+          {featured ? '★ Projeto em destaque' : highlight}
         </span>
       )}
 

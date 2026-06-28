@@ -6,6 +6,17 @@
 
 const PROJECTS = [
   {
+    id: 'petexpress',
+    title: 'PetExpress',
+    description:
+      'Transporte pet-friendly pra quem não tem carro e sofre pra levar o pet no veterinário ou no banho e tosa. Tem login, dashboard, agendamento em 3 passos e mapa real com rota traçada via Leaflet.',
+    tags: ['React', 'Vite', 'React Router', 'Leaflet'],
+    repo: 'https://github.com/luckfipis/petexpress',
+    demo: 'https://luckfipis.github.io/petexpress/',
+    highlight: 'Destaque',
+    featured: true,
+  },
+  {
     id: 'cicd-pipeline',
     title: 'Pipeline CI/CD',
     description:
